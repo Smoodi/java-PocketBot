@@ -1,0 +1,54 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.jengelman.gradle.plugins:shadow:2.0.1'
+    }
+}
+
+plugins {
+    id 'java'
+}
+
+
+apply plugin: 'java'
+apply plugin: 'com.github.johnrengelman.shadow'
+
+
+group 'de.smoodi'
+version '1.0-SNAPSHOT'
+
+jar {
+    manifest {
+        attributes 'Implementation-Title': 'Gradle Quickstart',
+                'Implementation-Version': version,
+                'Main-Class': 'de.smoodi.pocketbot.Main'
+    }
+}
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+dependencies {
+
+    //testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+
+    compile group: 'com.mashape.unirest', name: 'unirest-java', version: '1.3.1'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.4'
+
+    compile group: 'org.yaml', name: 'snakeyaml', version: '1.8'
+
+    compile 'net.dv8tion:JDA:4.2.0_222'
+    // this is for mysql java connector
+    compile group: 'mysql', name: 'mysql-connector-java', version: '8.0.25'
+    runtime "mysql:mysql-connector-java:8.0.25"
+}
+
+/*
+test {
+    useJUnitPlatform()
+}
+*/

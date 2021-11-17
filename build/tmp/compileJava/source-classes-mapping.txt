@@ -1,0 +1,20 @@
+de/smoodi/botutils/CommandHandler.java
+ de.smoodi.botutils.CommandHandler
+de/smoodi/pocketbot/cmds/ExampleCommand.java
+ de.smoodi.pocketbot.cmds.ExampleCommand
+de/smoodi/botutils/BotStatusMessage.java
+ de.smoodi.botutils.BotStatusMessage
+de/smoodi/pocketbot/Main.java
+ de.smoodi.pocketbot.Main
+de/smoodi/botutils/CommandWhitelist.java
+ de.smoodi.botutils.CommandWhitelist
+de/smoodi/botutils/AbstractCommand.java
+ de.smoodi.botutils.AbstractCommand
+de/smoodi/pocketbot/util/Config.java
+ de.smoodi.pocketbot.util.Config
+de/smoodi/pocketbot/listeners/MessageListener.java
+ de.smoodi.pocketbot.listeners.MessageListener
+de/smoodi/botutils/BOTUTILSCONFIG.java
+ de.smoodi.botutils.BOTUTILSCONFIG
+de/smoodi/botutils/DefaultHelpCommand.java
+ de.smoodi.botutils.DefaultHelpCommand
